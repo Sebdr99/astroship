@@ -1,0 +1,60 @@
+---
+import Layout from "@layouts/Layout.astro";
+import Container from "@components/container.astro";
+import Sectionhead from "@components/sectionhead.astro";
+
+const pageTitle = "Optimisation SEO : Boostez votre visibilité en ligne";
+const pageDescription =
+"Améliorez le positionnement de votre site dans les moteurs de recherche grâce à une stratégie d'optimisation SEO efficace et adaptée aux algorithmes actuels.";
+---
+
+<Layout title="Optimisation SEO">
+  <Container>
+    <Sectionhead>
+      <Fragment slot="title">{pageTitle}</Fragment>
+      <Fragment slot="desc">{pageDescription}</Fragment>
+    </Sectionhead>
+
+    <div class="flex flex-col gap-6 mx-auto max-w-4xl mt-16">
+      <h2 class="font-bold text-3xl text-gray-800">
+        Pourquoi l'optimisation SEO est-elle essentielle ?
+      </h2>
+      <p class="text-lg leading-relaxed text-slate-500">
+        L'optimisation pour les moteurs de recherche (SEO) est un élément clé pour améliorer la visibilité de votre site web. Elle permet d'attirer un trafic qualifié, de renforcer l'autorité de votre site, et d'augmenter vos chances de convertir vos visiteurs en clients. Avec des algorithmes de plus en plus sophistiqués, il est crucial d'adopter les bonnes pratiques SEO pour se démarquer dans les résultats de recherche.
+      </p>
+      <p class="text-lg leading-relaxed text-slate-500">
+        En mettant en œuvre des stratégies SEO adaptées, vous améliorez non seulement votre positionnement, mais vous augmentez également la pertinence et la qualité de votre contenu pour les utilisateurs. Cela mène à une meilleure expérience utilisateur (UX) et à des taux de conversion accrus.
+      </p>
+    </div>
+
+    <div class="flex flex-col gap-6 mx-auto max-w-4xl mt-12">
+      <h2 class="font-bold text-3xl text-gray-800">
+        Nos techniques d'optimisation SEO
+      </h2>
+      <p class="text-lg leading-relaxed text-slate-500">
+        Chez <strong>ReisTech</strong>, nous appliquons des stratégies SEO qui respectent les dernières directives de Google et des autres moteurs de recherche. Voici quelques-unes de nos principales techniques :
+      </p>
+      <ul class="list-disc list-inside text-lg leading-relaxed text-slate-500">
+        <li><strong>Recherche de mots-clés</strong> : Identifier les termes et expressions utilisés par vos clients potentiels pour garantir que votre contenu répond à leurs attentes.</li>
+        <li><strong>Optimisation on-page</strong> : Améliorer vos balises de titre, méta-descriptions, et structurer votre contenu avec des balises H1-H6 pour une lecture facile des robots d’indexation.</li>
+        <li><strong>SEO technique</strong> : Accélérer la vitesse de chargement de vos pages, sécuriser votre site avec un certificat SSL, et améliorer la structure des URL pour un crawl optimal par les moteurs de recherche.</li>
+        <li><strong>Optimisation du contenu</strong> : Créer un contenu pertinent, engageant et mis à jour régulièrement pour répondre aux questions des utilisateurs et améliorer votre classement.</li>
+        <li><strong>Netlinking</strong> : Développer une stratégie de backlinks de qualité provenant de sites fiables pour renforcer l'autorité de votre domaine.</li>
+      </ul>
+    </div>
+
+    <div class="flex flex-col gap-6 mx-auto max-w-4xl mt-12">
+      <h2 class="text-3xl font-bold text-gray-800">
+        Améliorez votre classement avec ReisTech
+      </h2>
+      <p class="text-lg leading-relaxed text-slate-500">
+        Chez <strong>ReisTech</strong>, nous mettons tout en œuvre pour optimiser le SEO de votre site et vous aider à gagner en visibilité dans les résultats des moteurs de recherche. Laissez-nous vous accompagner dans la mise en place d'une stratégie SEO performante, qui attirera plus de trafic qualifié et augmentera votre taux de conversion.
+      </p>
+      <div class="text-center">
+        <a href="/contact" class="inline-block px-8 py-4 bg-black text-white rounded-lg font-semibold hover:bg-gray-800 transition mx-auto">
+          Contactez-nous dès aujourd'hui
+        </a>
+      </div>
+      
+  </Container>
+</Layout>

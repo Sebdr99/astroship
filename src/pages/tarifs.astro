@@ -1,0 +1,70 @@
+---
+import Layout from "@layouts/Layout.astro";
+import Container from "@components/container.astro";
+import Sectionhead from "@components/sectionhead.astro";
+import PricingCard from "@components/tarifs.astro";
+
+const tarifs = [
+  {
+    name: "Site vitrine",
+    price: "À partir de 1500€",
+    popular: false,
+    features: [
+      "À partir de 50€/mois",
+      "Nombre de page illimité",
+      "SEO optimisé",
+      "Support",
+    ],
+    button: {
+      text: "Nous contacter",
+      link: "contact",
+    },
+  },
+  {
+    name: "Site e-commerce",
+    price: "À partir de 4000€",
+    popular: true,
+    features: [
+      "À partir de 100€/mois",
+      "Nombre de page illimité",
+      "SEO optimisé",
+      "Support",
+    ],
+    button: {
+      text: "Nous contacter",
+      link: "contact",
+    },
+  },
+  {
+    
+    name: "Site avec WebApp intégré",
+    price: 'Sur\ndevis',
+    popular: false,
+    features: [
+      "Prix variable selon besoins",
+      "Fonctionalités personnalisées",
+      "SEO optimisé",
+      "Support prioritaire",
+    ],
+    button: {
+      text: "Nous contacter",
+      link: "/contact",
+    },
+  },
+];
+---
+
+<Layout title="Tarifs">
+  <Container>
+    <Sectionhead>
+      <Fragment slot="title">Tarifs</Fragment>
+      <Fragment slot="desc">
+        Tarification simple et prévisible. Pas de mauvaises surprises.
+      </Fragment>
+    </Sectionhead>
+
+    <div class="grid md:grid-cols-3 gap-10 mx-auto max-w-screen-lg mt-12">
+      {tarifs.map((item) => <PricingCard plan={item} />)}
+    </div>
+  </Container>
+</Layout>

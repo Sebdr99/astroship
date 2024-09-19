@@ -1,0 +1,60 @@
+---
+import Layout from "@layouts/Layout.astro";
+import Container from "@components/container.astro";
+import Sectionhead from "@components/sectionhead.astro";
+
+const pageTitle = "Intégration CMS : Simplifiez la gestion de votre contenu";
+const pageDescription =
+"Adoptez un CMS performant pour gérer facilement le contenu de votre site tout en optimisant la mise à jour et la personnalisation des pages web.";
+---
+
+<Layout title="Intégration CMS">
+  <Container>
+    <Sectionhead>
+      <Fragment slot="title">{pageTitle}</Fragment>
+      <Fragment slot="desc">{pageDescription}</Fragment>
+    </Sectionhead>
+
+    <div class="flex flex-col gap-6 mx-auto max-w-4xl mt-16">
+      <h2 class="font-bold text-3xl text-gray-800">
+        Pourquoi intégrer un CMS à votre site ?
+      </h2>
+      <p class="text-lg leading-relaxed text-slate-500">
+        Un système de gestion de contenu (CMS) vous permet de gérer et de mettre à jour facilement votre site web sans avoir besoin de compétences techniques avancées. Il offre une interface conviviale qui permet à toute équipe de créer, modifier, et organiser du contenu en temps réel. Que vous souhaitiez publier un article de blog, ajouter un produit à une boutique en ligne ou mettre à jour une page d’information, l’intégration d’un CMS facilite grandement ces processus.
+      </p>
+      <p class="text-lg leading-relaxed text-slate-500">
+        Avec un CMS, vous bénéficiez d’une plus grande flexibilité dans la gestion du contenu tout en maintenant une structure cohérente de votre site. Cela vous permet d’adapter rapidement votre site aux besoins du marché ou de vos utilisateurs, tout en conservant un haut niveau de performance et de sécurité.
+      </p>
+    </div>
+
+    <div class="flex flex-col gap-6 mx-auto max-w-4xl mt-12">
+      <h2 class="font-bold text-3xl text-gray-800">
+        Nos services d'intégration CMS
+      </h2>
+      <p class="text-lg leading-relaxed text-slate-500">
+        Chez <strong>ReisTech</strong>, nous vous accompagnons dans le choix et l'intégration du CMS le mieux adapté à vos besoins. Voici nos principales prestations :
+      </p>
+      <ul class="list-disc list-inside text-lg leading-relaxed text-slate-500">
+        <li><strong>Choix du CMS</strong> : Nous vous aidons à sélectionner le CMS qui convient à vos besoins (WordPress, Joomla, Drupal, etc.) en fonction de la taille de votre site et de vos objectifs.</li>
+        <li><strong>Installation et configuration</strong> : Nous installons et configurons votre CMS pour qu'il soit pleinement opérationnel, sécurisé et optimisé pour le SEO.</li>
+        <li><strong>Personnalisation de thèmes</strong> : Développement de thèmes sur mesure ou personnalisation de thèmes existants pour correspondre à l'image de marque de votre entreprise.</li>
+        <li><strong>Modules et extensions</strong> : Intégration de plugins ou modules pour ajouter des fonctionnalités spécifiques (boutique en ligne, formulaires, SEO, etc.).</li>
+        <li><strong>Formation à l’utilisation</strong> : Nous formons votre équipe à l’utilisation du CMS pour vous permettre de gérer facilement le contenu et de maintenir votre site à jour.</li>
+      </ul>
+    </div>
+
+    <div class="flex flex-col gap-6 mx-auto max-w-4xl mt-12">
+      <h2 class="text-3xl font-bold text-gray-800">
+        Optez pour une gestion simplifiée avec ReisTech
+      </h2>
+      <p class="text-lg leading-relaxed text-slate-500">
+        Avec l'intégration d'un CMS par <strong>ReisTech</strong>, vous profitez d'une gestion de contenu intuitive et d'une flexibilité accrue pour la maintenance de votre site. Dites adieu aux mises à jour complexes et chronophages et concentrez-vous sur le développement de votre activité en ligne.
+      </p>
+      <div class="text-center">
+        <a href="/contact" class="inline-block px-8 py-4 bg-black text-white rounded-lg font-semibold hover:bg-gray-800 transition mx-auto">
+          Contactez-nous dès aujourd'hui
+        </a>
+      </div>
+      
+  </Container>
+</Layout>

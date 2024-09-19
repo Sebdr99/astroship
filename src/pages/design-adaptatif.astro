@@ -1,0 +1,59 @@
+---
+import Layout from "@layouts/Layout.astro";
+import Container from "@components/container.astro";
+import Sectionhead from "@components/sectionhead.astro";
+
+const pageTitle = "Design adaptatif : un site ajusté à tous les écrans";
+const pageDescription =
+"Offrez à vos utilisateurs une expérience fluide et optimale sur tous les appareils grâce à un design adaptatif performant et adapté à chaque écran.";
+---
+
+<Layout title="Design Adaptatif">
+  <Container>
+    <Sectionhead>
+      <Fragment slot="title">{pageTitle}</Fragment>
+      <Fragment slot="desc">{pageDescription}</Fragment>
+    </Sectionhead>
+
+    <div class="flex flex-col gap-6 mx-auto max-w-4xl mt-16">
+      <h2 class="font-bold text-3xl text-gray-800">
+        Pourquoi le design adaptatif est-il indispensable ?
+      </h2>
+      <p class="text-lg leading-relaxed text-slate-500">
+        Le design adaptatif permet à votre site de s'ajuster automatiquement à plusieurs formats d'écrans, que ce soit un smartphone, une tablette ou un ordinateur de bureau. Cette approche garantit une expérience utilisateur fluide, quel que soit l'appareil utilisé pour consulter votre site.
+      </p>
+      <p class="text-lg leading-relaxed text-slate-500">
+        En plus de l'adaptabilité, le design adaptatif améliore la navigation et rend votre site plus accessible à un plus large public. En optimisant le confort des utilisateurs, vous favorisez leur engagement et augmentez la durée de leurs visites.
+      </p>
+    </div>
+
+    <div class="flex flex-col gap-6 mx-auto max-w-4xl mt-12">
+      <h2 class="font-bold text-3xl text-gray-800">
+        Nos méthodes pour un design adaptatif efficace
+      </h2>
+      <p class="text-lg leading-relaxed text-slate-500">
+        Chez <strong>ReisTech</strong>, nous utilisons les meilleures pratiques pour garantir que votre site soit non seulement adaptatif, mais aussi performant et rapide. Voici quelques-unes des techniques que nous employons :
+      </p>
+      <ul class="list-disc list-inside text-lg leading-relaxed text-slate-500">
+        <li><strong>Media queries</strong> : Des styles adaptés à chaque taille d’écran pour une présentation optimisée sur tous les appareils.</li>
+        <li><strong>CSS Grid</strong> et <strong>Flexbox</strong> : Ces techniques permettent une mise en page flexible et fluide, quel que soit le dispositif.</li>
+        <li>Utilisation d'<strong>images adaptatives</strong> : Pour améliorer les temps de chargement, notamment sur les appareils mobiles.</li>
+        <li><strong>Tests multi-appareils</strong> : Nous vérifions la compatibilité de votre site sur différentes plateformes pour une expérience homogène.</li>
+      </ul>
+    </div>
+
+    <div class="flex flex-col gap-6 mx-auto max-w-4xl mt-12">
+      <h2 class="text-3xl font-bold text-gray-800">
+        Boostez votre présence en ligne avec un design adaptatif
+      </h2>
+      <p class="text-lg leading-relaxed text-slate-500">
+        Chez <strong>ReisTech</strong>, nous nous engageons à vous offrir un site performant, esthétique et ajusté à tous les appareils. Ne laissez plus un mauvais design freiner la croissance de votre entreprise en ligne.
+      </p>
+      <div class="text-center">
+        <a href="/contact" class="inline-block px-8 py-4 bg-black text-white rounded-lg font-semibold hover:bg-gray-800 transition mx-auto">
+          Contactez-nous dès aujourd'hui
+        </a>
+      </div>
+      
+  </Container>
+</Layout>

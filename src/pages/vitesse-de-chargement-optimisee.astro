@@ -1,0 +1,61 @@
+---
+import Layout from "@layouts/Layout.astro";
+import Container from "@components/container.astro";
+import Sectionhead from "@components/sectionhead.astro";
+
+const pageTitle = "Vitesse de chargement optimisée : Améliorez la performance de votre site";
+const pageDescription =
+"Réduisez le temps de chargement de votre site pour offrir une meilleure expérience utilisateur et améliorer votre référencement grâce à une optimisation efficace.";
+---
+
+<Layout title="Vitesse de chargement optimisée">
+  <Container>
+    <Sectionhead>
+      <Fragment slot="title">{pageTitle}</Fragment>
+      <Fragment slot="desc">{pageDescription}</Fragment>
+    </Sectionhead>
+
+    <div class="flex flex-col gap-6 mx-auto max-w-4xl mt-16">
+      <h2 class="font-bold text-3xl text-gray-800">
+        Pourquoi optimiser la vitesse de chargement est crucial ?
+      </h2>
+      <p class="text-lg leading-relaxed text-slate-500">
+        La vitesse de chargement de votre site web est un facteur clé de l'expérience utilisateur et du référencement. Un site rapide retient davantage les visiteurs, réduit le taux de rebond et augmente les conversions. Google, notamment avec son initiative Core Web Vitals, privilégie les sites rapides, ce qui influence directement votre position dans les résultats de recherche.
+      </p>
+      <p class="text-lg leading-relaxed text-slate-500">
+        Une vitesse de chargement optimisée permet également de mieux répondre aux attentes des utilisateurs sur les appareils mobiles, où la patience face aux sites lents est très limitée. Ainsi, améliorer la performance de votre site contribue à offrir une expérience fluide sur tous les appareils.
+      </p>
+    </div>
+
+    <div class="flex flex-col gap-6 mx-auto max-w-4xl mt-12">
+      <h2 class="font-bold text-3xl text-gray-800">
+        Nos méthodes pour une vitesse de chargement optimisée
+      </h2>
+      <p class="text-lg leading-relaxed text-slate-500">
+        Chez <strong>ReisTech</strong>, nous utilisons des techniques avancées pour réduire les temps de chargement de votre site. Voici certaines des stratégies que nous employons pour maximiser la vitesse :
+      </p>
+      <ul class="list-disc list-inside text-lg leading-relaxed text-slate-500">
+        <li><strong>Optimisation des images</strong> : Réduction de la taille des images et utilisation du format approprié (WebP, JPEG) pour minimiser l'impact sur le temps de chargement.</li>
+        <li><strong>Lazy loading</strong> : Chargement différé des images et des éléments non visibles pour améliorer la vitesse initiale de rendu.</li>
+        <li><strong>Minification des fichiers</strong> : Compression des fichiers CSS, JavaScript et HTML pour réduire le poids des pages et accélérer leur affichage.</li>
+        <li><strong>Utilisation du cache</strong> : Mise en cache des ressources pour diminuer les temps de chargement lors des visites répétées.</li>
+        <li><strong>Réseau de diffusion de contenu (CDN)</strong> : Déploiement des contenus via un CDN pour distribuer les fichiers à partir de serveurs proches des utilisateurs.</li>
+      </ul>
+    </div>
+
+    <div class="flex flex-col gap-6 mx-auto max-w-4xl mt-12">
+      <h2 class="text-3xl font-bold text-gray-800">
+        Boostez la performance de votre site avec ReisTech
+      </h2>
+      <p class="text-lg leading-relaxed text-slate-500">
+        Chez <strong>ReisTech</strong>, nous sommes spécialisés dans l'optimisation des performances web. Nous vous aidons à améliorer la vitesse de chargement de votre site pour offrir une expérience utilisateur optimale et obtenir un meilleur classement sur les moteurs de recherche. Un site rapide est essentiel pour capter et retenir vos visiteurs.
+      </p>
+      <div class="text-center">
+        <a href="/contact" class="inline-block px-8 py-4 bg-black text-white rounded-lg font-semibold hover:bg-gray-800 transition mx-auto">
+          Contactez-nous dès aujourd'hui
+        </a>
+      </div>
+      
+
+  </Container>
+</Layout>

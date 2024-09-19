@@ -1,0 +1,64 @@
+---
+import Layout from "@layouts/Layout.astro";
+import Container from "@components/container.astro";
+import Sectionhead from "@components/sectionhead.astro";
+
+const pageTitle = "Sécurité renforcée : Protégez votre site et vos données";
+const pageDescription =
+"Assurez une protection optimale de votre site internet contre les cyberattaques grâce à une sécurité renforcée, adaptée à vos besoins et aux standards actuels.";
+---
+
+<Layout title="Sécurité Renforcée">
+  <Container>
+    <Sectionhead>
+      <Fragment slot="title">{pageTitle}</Fragment>
+      <Fragment slot="desc">{pageDescription}</Fragment>
+    </Sectionhead>
+
+    <div class="flex flex-col gap-6 mx-auto max-w-4xl mt-16">
+      <h2 class="font-bold text-3xl text-gray-800">
+        Pourquoi la sécurité renforcée est-elle indispensable ?
+      </h2>
+      <p class="text-lg leading-relaxed text-slate-500">
+        La sécurité d'un site web est essentielle pour protéger vos données, celles de vos utilisateurs et pour maintenir la confiance de vos clients. Les cyberattaques sont de plus en plus fréquentes et sophistiquées, ce qui exige des mesures de protection robustes pour éviter les violations de données, les piratages, ou les pertes de données sensibles.
+      </p>
+      <p class="text-lg leading-relaxed text-slate-500">
+        Une sécurité renforcée permet également d'améliorer votre référencement, car les moteurs de recherche comme Google pénalisent les sites vulnérables ou non sécurisés. Assurez-vous que votre site est protégé pour éviter les impacts négatifs sur votre activité en ligne.
+      </p>
+    </div>
+
+    <div class="flex flex-col gap-6 mx-auto max-w-4xl mt-12">
+      <h2 class="font-bold text-3xl text-gray-800">
+        Nos solutions de sécurité renforcée
+      </h2>
+      <p class="text-lg leading-relaxed text-slate-500">
+        Chez <strong>ReisTech</strong>, nous mettons en place des stratégies de sécurité avancées pour protéger votre site contre les menaces. Voici quelques-unes de nos solutions :
+      </p>
+      <ul class="list-disc list-inside text-lg leading-relaxed text-slate-500">
+        <li><strong>Certificats SSL</strong> : Installation et gestion de certificats SSL pour chiffrer les échanges de données et protéger les informations sensibles.</li>
+        <li><strong>Protection contre les attaques DDoS</strong> : Mise en place de solutions anti-DDoS pour prévenir les interruptions de service causées par les attaques massives.</li>
+        <li><strong>Firewall applicatif</strong> : Configuration d'un pare-feu pour bloquer les menaces et filtrer le trafic malveillant.</li>
+        <li><strong>Sauvegardes automatiques</strong> : Planification de sauvegardes régulières pour éviter la perte de données et garantir une restauration rapide en cas de problème.</li>
+        <li><strong>Mises à jour de sécurité</strong> : Suivi et installation des dernières mises à jour de sécurité pour les CMS et plugins afin de corriger les vulnérabilités.</li>
+      </ul>
+    </div>
+
+    <div class="flex flex-col gap-6 mx-auto max-w-4xl mt-12">
+      <h2 class="text-3xl font-bold text-gray-800">
+        Protégez votre site avec ReisTech
+      </h2>
+      <p class="text-lg leading-relaxed text-slate-500">
+        Chez <strong>ReisTech</strong>, nous veillons à ce que votre site internet soit sécurisé contre les cybermenaces, tout en maintenant des performances optimales. Ne prenez aucun risque avec la sécurité de votre site et offrez à vos clients une plateforme fiable et sécurisée.
+      </p>
+      <div class="text-center">
+        <a href="/contact" class="inline-block px-8 py-4 bg-black text-white rounded-lg font-semibold hover:bg-gray-800 transition mx-auto">
+          Contactez-nous dès aujourd'hui
+        </a>
+
+        
+      </div>
+      
+      
+    
+  </Container>
+</Layout>
